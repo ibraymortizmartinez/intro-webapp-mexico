@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera de México</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Bandera de México</h1>
+        <div class="row">
+            <!-- Columna Verde (Esperanza) -->
+            <div class="col-md-4">
+                <label for="greenSlider">Esperanza</label>
+                <input type="range" class="form-control-range" id="greenSlider" min="0" max="255">
+                <p id="greenHex">#00FF00</p>
+                <div id="greenBox" class="color-box"></div>
+            </div>
+
+            <!-- Columna Blanco (Unidad) -->
+            <div class="col-md-4">
+                <label for="whiteSlider">Unidad</label>
+                <input type="range" class="form-control-range" id="whiteSlider" min="0" max="255" disabled>
+                <p id="whiteHex">#FFFFFF</p>
+                <div id="whiteBox" class="color-box"
+                 class="text-center at-symbol">
+                    <br>
+                    <br>
+                    @@@@<br>
+                    @@@@<br>
+                    @@@@<br>
+                    @@@@
+                </div>
+            </div>
+
+            <!-- Columna Rojo (Sangre de nuestros héroes nacionales) -->
+            <div class="col-md-4">
+                <label for="redSlider">Sangre de nuestros héroes nacionales</label>
+                <input type="range" class="form-control-range" id="redSlider" min="0" max="255">
+                <p id="redHex">#FF0000</p>
+                <div id="redBox" class="color-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
