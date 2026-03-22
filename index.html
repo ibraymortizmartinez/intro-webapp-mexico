@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera de México - Ultimate Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/png" href="./assets/img/mexico.png">
+</head>
+<body>
+
+    <div class="bg-shape shape-green"></div>
+    <div class="bg-shape shape-red"></div>
+
+    <div class="container">
+        <header>
+            <div class="header-controls">
+                <select id="theme-selector" class="glass-select">
+                    <option value="oficial">Paleta Oficial</option>
+                    <option value="pastel">Paleta Pastel</option>
+                    <option value="neon">Paleta Neón</option>
+                </select>
+                <div class="header-buttons">
+                    <button id="btn-format" class="glass-btn icon-btn" title="Cambiar Formato (HEX, RGB, HSL)">#️⃣</button>
+                    <button id="btn-dark-mode" class="glass-btn icon-btn" title="Alternar Modo Oscuro">🌙</button>
+                </div>
+            </div>
+            <h1 class="title">Bandera de México</h1>
+            <p class="subtitle">Haz clic en los títulos para ver la historia | Clic en el código para copiar</p>
+            <div class="main-actions">
+                <button id="btn-reset" class="glass-btn">Restaurar Todo</button>
+                <button id="btn-export" class="glass-btn highlight">Exportar CSS</button>
+            </div>
+        </header>
+
+        <main class="flag-container">
+            <div class="glass-card" style="animation-delay: 0.1s;">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2 class="flip-trigger" title="Ver historia">Esperanza ↺</h2>
+                        <div class="slider-group">
+                            <input type="range" id="slider-verde" min="0" max="100" value="100">
+                            <span id="pct-verde" class="pct-text">100%</span>
+                        </div>
+                        <p class="hex-text" id="text-verde" title="Copiar al portapapeles">#006847</p>
+                        <div class="color-block" id="block-verde"></div>
+                    </div>
+                    <div class="card-back">
+                        <h2 class="flip-trigger">Volver ↺</h2>
+                        <p class="history-text">Representa la esperanza del pueblo en el destino de su raza. Originalmente, en el ejército Trigarante, representaba la Independencia de España.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card" style="animation-delay: 0.3s;">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2 class="flip-trigger" title="Ver historia">Unidad ↺</h2>
+                        <div class="slider-group">
+                            <input type="range" id="slider-blanco" min="0" max="100" value="100">
+                            <span id="pct-blanco" class="pct-text">100%</span>
+                        </div>
+                        <p class="hex-text" id="text-blanco" title="Copiar al portapapeles">#FFFFFF</p>
+                        <div class="color-block escudo-block" id="block-blanco">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Coat_of_arms_of_Mexico.svg" alt="Escudo de México" class="escudo">
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h2 class="flip-trigger">Volver ↺</h2>
+                        <p class="history-text">Simboliza la pureza de los ideales del pueblo y la unidad de los mexicanos. Históricamente representaba la fe católica.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card" style="animation-delay: 0.5s;">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2 class="flip-trigger" title="Ver historia">Sangre ↺</h2>
+                        <div class="slider-group">
+                            <input type="range" id="slider-rojo" min="0" max="100" value="100">
+                            <span id="pct-rojo" class="pct-text">100%</span>
+                        </div>
+                        <p class="hex-text" id="text-rojo" title="Copiar al portapapeles">#CE1126</p>
+                        <div class="color-block" id="block-rojo"></div>
+                    </div>
+                    <div class="card-back">
+                        <h2 class="flip-trigger">Volver ↺</h2>
+                        <p class="history-text">Rinde homenaje a la sangre derramada por los héroes de la patria. Originalmente representaba la unión entre europeos y americanos.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="glass-footer">
+            <div class="footer-top">
+                <div class="footer-section">
+                    <h3>Bandera de México</h3>
+                    <p>Un proyecto interactivo diseñado para explorar los colores, la historia y la composición de nuestra bandera nacional utilizando tecnologías web modernas (HTML, CSS, JS).</p>
+                </div>
+
+                <div class="footer-section links">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="https://ibraymortizmartinez.com/#0" target="_blank">📄 Ver mi CV</a></li>
+                        <li><a href="https://github.com/ibraymortizmartinez/intro-webapp-mexico.git" target="_blank">💻 Ver código de este proyecto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section contact">
+                    <p>¡Abierto a nuevas oportunidades laborales!</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-text">Diseñado y desarrollado por <strong>ANGEL IBRAYM ORTIZ MARTÍNEZ</strong> &copy; 2026</p>
+                <div class="social-links">
+                    <a href="https://github.com/ibraymortizmartinez" target="_blank" class="social-btn" title="Visitar GitHub">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                    <a href="www.linkedin.com/in/angel-ibraym-ortiz-martínez-973360354" target="_blank" class="social-btn" title="Conectar en LinkedIn">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/ibraym_om?igsh=N2UzdWl4b2g4dG9p" target="_blank" class="social-btn" title="Seguir en Instagram">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.88z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <div id="export-modal" class="modal">
+        <div class="modal-content glass-card">
+            <h2>Tu Paleta CSS</h2>
+            <textarea id="css-output" readonly></textarea>
+            <button id="btn-close-modal" class="glass-btn">Cerrar</button>
+        </div>
+    </div>
+
+    <div id="toast" class="toast">¡Copiado al portapapeles!</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
