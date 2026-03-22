@@ -52,6 +52,6 @@ Si deseas correr este proyecto en tu máquina local:
    git clone [https://github.com/ibraymortizmartinez/intro-webapp-mexico.git](https://github.com/ibraymortizmartinez/intro-webapp-mexico.git)
 
 2. Navega a la carpeta del proyecto:
-   ```cd intro-webapp-mexico
+    cd intro-webapp-mexico
 
 3. Abre el archivo index.html en tu navegador de preferencia o utiliza un servidor local como la extensión "Live Server" en VS Code.
